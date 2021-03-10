@@ -82,6 +82,9 @@ const Home = () => {
             onChange={handleInputUser}
           />
           <button type="submit">Confirmar</button>
+          <button type="button" onClick={(e) => setRepos([])}>
+            Limpar
+          </button>
         </Form>
         <ContainerList>
           {repos.length > 0 && (
