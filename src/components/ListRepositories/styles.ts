@@ -9,8 +9,15 @@ export const ItemList = styled.li`
   border-top: 1px solid #eee;
   align-items: center;
   transition: background-color 0.2s;
+  button {
+    background: transparent;
+    margin-right: 5px;
+  }
   &:hover {
     background: ${shade(0.1, '#B0B0B0')};
+    button {
+      background: ${shade(0.1, '#B0B0B0')};
+    }
   }
 
   img {

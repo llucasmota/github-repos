@@ -12,6 +12,9 @@ export const Container = styled.div`
   & > header {
     display: flex;
     flex-direction: row;
+    svg {
+      margin-right: 1px;
+    }
   }
   h1 {
     font-size: 20px;
@@ -19,9 +22,6 @@ export const Container = styled.div`
     flex-direction: row;
     align-items: center;
     margin-left: 5px;
-  }
-  svg {
-    margin-right: 1px;
   }
 `;
 
