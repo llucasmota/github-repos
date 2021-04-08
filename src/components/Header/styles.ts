@@ -1,6 +1,13 @@
+import { inherits } from 'node:util';
 import styled from 'styled-components';
 
-export const Header = styled.header`
+interface theme {
+  theme: boolean;
+}
+
+
+export const Header = styled.header<theme>`
+background-color: ${(props) => props.theme === true ? 'black' : '#FFF'};
   display: flex;
   flex-direction: row;
   h1 {
